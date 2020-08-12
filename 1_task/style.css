@@ -1,0 +1,7 @@
+body {
+background-color: lightblue;    
+}
+p {color: white;}
+h1{color: pink;}
+#my_id{color: green;}
+.my_class{color: yellow;}
