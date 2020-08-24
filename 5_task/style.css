@@ -1,0 +1,16 @@
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+th {
+    height: 50px;
+    background-color: rgba(240, 94, 94, 0.466);
+}
+th,td {
+    padding: 10px;
+}
+.cols{
+    background-color: blueviolet;
+    font-size: 3em;
+}
