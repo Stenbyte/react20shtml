@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e2e2f5;
+    font-family: 'Schoolbell', cursive;
+}
+.welcome {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 2px;
+    min-height: 25%;
+    margin-top: 210px;
+    margin-left: 100px;
+    opacity: 0.7;
+  }
+header{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+}
+header #logo img {
+    height: 90px;           
+} 
+header nav ul {
+    list-style-type: none;
+    padding: 30px;
+}
+header nav ul li {
+    display: inline-block;   
+}
+header nav ul li a {
+    padding: 50px;
+}
+header nav ul li a:hover {
+    color: coral;
+}
+
+
+main #hero {
+    background: url("https://source.unsplash.com/WLUHO9A_xik/1600x900") no-repeat fixed center center/cover;
+    padding: 50px;
+    height: 85vh;
+}
+main .welcome button{
+    background-color: coral;
+    padding: 3px;
+    margin-top: 20px;
+}
