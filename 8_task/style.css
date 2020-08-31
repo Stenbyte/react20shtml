@@ -1,0 +1,25 @@
+body{background-color: coral;}
+@media (min-width: 576px){
+    body{ 
+    background-color: blue;
+    }
+}
+
+@media (min-width: 768px){
+    body{ 
+        background-color: rgb(139, 49, 124);
+        }
+}
+@media (min-width: 992px){
+    body{ 
+        background-color: rgb(236, 11, 11);
+        }
+}
+@media (min-width: 1200px){
+    body{ 
+        background-color: rgb(221, 236, 11);
+        }
+        h1::after{
+            content: "text is changing";
+        }
+}
