@@ -1,53 +1,104 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: #e2e2f5;
-    font-family: 'Schoolbell', cursive;
+  background-color: #e2e2f5;
+  font-family: "Schoolbell", cursive;
 }
-.welcome {
-    max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 50px;
-    border-radius: 2px;
-    min-height: 25%;
-    margin-top: 210px;
-    margin-left: 100px;
-    opacity: 0.7;
-  }
-header{
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    height: 200px;
+p {
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+/* header  */
+header {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  height: 185px;
 }
 header #logo img {
-    height: 90px;           
-} 
+  width: 200px;
+}
 header nav ul {
-    list-style-type: none;
-    padding: 30px;
+  list-style-type: none;
+  padding: 30px;
 }
 header nav ul li {
-    display: inline-block;   
+  display: inline-block;
 }
 header nav ul li a {
-    padding: 50px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 1px solid transparent;
 }
 header nav ul li a:hover {
-    color: coral;
+  color: coral;
+  font-weight: bold;
+  border-bottom: 1px solid coral;
 }
 
-
-main #hero {
-    background: url("https://source.unsplash.com/WLUHO9A_xik/1600x900") no-repeat fixed center center/cover;
-    padding: 50px;
-    height: 85vh;
+#hero {
+  background: url("https://source.unsplash.com/WLUHO9A_xik/1600x900") no-repeat
+    fixed center center/cover;
+  padding: 50px;
+  height: 75vh;
 }
-main .welcome button{
-    background-color: coral;
-    padding: 3px;
-    margin-top: 20px;
+/* main .welcome button {
+  background-color: coral;
+  padding: 3px;
+  margin-top: 20px;
+} */
+.container {
+  max-width: 1000px;
+  /* background-color: rgba(255, 255, 255, 0.95); */
+  padding: 50px;
+  /* border-radius: 2px; */
+  /* min-height: 25%; */
+  margin: 0 auto;
+  /* opacity: 0.7; */
+}
+#hero .content {
+  background-color: rgba(255, 99, 71, 0.637);
+  padding: 20px;
+  color: white;
+  margin-top: 100px;
+  width: 500px;
+  border-radius: 5px;
+}
+#hero .content h1 {
+  font-size: 32px;
+}
+#hero .content a {
+  color: rgb(32, 31, 31);
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f5f9e2;
+  padding: 12px 24px;
+  margin-top: 24px 0;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+/* about us */
+#about {
+  background-color: white;
+}
+#about .text {
+  float: left;
+  padding: 5px;
+  /* width: 40%; */
+}
+#about img {
+  float: right;
+  width: 40%;
+  border-radius: 5px;
+}
+footer {
+  background-color: whitesmoke;
+  color: tomato;
 }
