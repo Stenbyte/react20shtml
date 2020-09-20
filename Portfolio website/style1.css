@@ -25,6 +25,7 @@ a {
 }
 h1, h2, h3 {
     margin-bottom: 1.8rem;
+    text-transform: capitalize;
 }
 
 .container {
@@ -41,6 +42,12 @@ header{
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 header #logo a {
@@ -65,12 +72,46 @@ header nav ul li a {
     border-bottom: 3px double transparent;
 }
 header nav ul li a:hover {
-    background-color: coral;
     border-bottom: 3px double;
+}
+header nav i {
+    font-size: inherit;
+    color: crimson;
+}
+/* Hide nested ul by default */
+header nav ul li ul {
+    display: none;
+}
+header nav ul li:hover a {
+    color: coral;
+    cursor: pointer;
+}
+/* Nested dropdown show */
+nav ul li {
+    position: relative;
+}
+nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+}
+nav ul li:hover ul li {
+    display: block;
+    background: #e7e7e7;
+}
+nav ul li:hover ul li a {
+    color: rgb(172, 0, 0);
+}
+nav ul li:hover ul li:hover {
+    color: inherit;
 }
 
 /* Hero banner */
-
+main {
+    margin-top: 80px;
+}
 main #hero-banner {
     background: url("https://source.unsplash.com/1600x900/?dark") 
   no-repeat fixed center center/cover;
@@ -78,77 +119,165 @@ main #hero-banner {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+main #hero-banner::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: rgba(124, 57, 57, 0.4);
 }
 main #hero-banner h1 {
     color: white;
     text-align: center;
     font-size: 5rem;
     font-family: "Ubuntu Mono", monospace;
+    z-index: 1;
 }
 main #hero-banner span {
     color: coral;
 }
 
-/* Past section */
+/* Work section */
 
-main #past {
+main #work {
     background-color: #f4f4f4;
-}
+    scroll-margin-top: 6em;
+  }
 
-main #past .past_boxes {
+main #work .work_boxes {
     display: flex;
     justify-content: space-between;
 }
-main #past .box {
+main #work .box {
     background-color: white;
     width: 32%;
     padding: 1rem;
     border-radius: 2px;
     box-shadow: 0 0 5px #333;
 }
-main #past .box:hover {
+main #work .box:hover {
     box-shadow: 0 0 25px #333;
 }
-main #past .box img {
+main #work .box img {
     width: 100%;
     margin-bottom: 1rem;
 }
 
-main #past .box a:hover {
+main #work .box a:hover {
     color: darkolivegreen;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-/* present section  */
+/* Experience section  */
 
-main #present {
+main #experience {
     display: flex;
     background-color: white;
+    scroll-margin-top: 6em;
 }
-main #present img {
+main #experience img {
     width: 50%;
     object-fit: cover;
+    object-position: center;
 }
 
-main #present .content {
+main #experience .content {
     padding: 3rem;
 }
 
-/* Future section  */
+/* Skills section  */
 
-main #future {
-    background: url("https://source.unsplash.com/user/jackie/likes") 
+main #skills {
+    background: url("https://source.unsplash.com/daily") 
     no-repeat fixed center center/cover;
     padding: 3rem;
+    width: 100%;
 }
-  main #future .container {
-      background-color: rgba(255, 255, 255, 0.95);
+  main #skills .container {
+      background-color: rgba(255, 255, 255, 0.596);
   }
-  main #future img {
-      width: 300px;
-      float: left;
-      margin-right: 2rem;
+  main #skills .boxes1 {
+        display: flex;
+        justify-content: space-evenly;
   }
+  main #skills .box1 {
+    height: 245px;
+    width: 255px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #333;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+main #skills .box1:nth-child(odd) {
+    background-color: rgba(100, 148, 237, 0.616);
+}
+    .box1 p {
+        margin: 2rem 0;
+    }
+
+i {
+    color: coral;
+    font-size: 48px;
+    }
+/* Gallery */
+.gallery-group {
+    display: grid;
+    grid-template-areas:
+    "a a b b c c"
+    "a a d d c c"
+    "e h h h c c"
+    "f h h h i i"
+    "g h h h i i";
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-div {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-item:hover{
+    transform: scale(1.05);
+}
+.grid-item-1 {
+    grid-area: a;
+}
+.grid-item-2 {
+    grid-area: b;
+}
+.grid-item-3 {
+    grid-area: c;
+}
+.grid-item-4 {
+    grid-area: d;
+}
+.grid-item-5 {
+    grid-area: e;
+}
+.grid-item-6 {
+    grid-area: f;
+}
+.grid-item-7 {
+    grid-area: g;
+}
+.grid-item-8 {
+    grid-area: h;
+}
+.grid-item-9 {
+    grid-area: i;
+}
 
   /* Footer */
 
@@ -157,6 +286,7 @@ main #future {
       text-align: center;
       color: white;
       padding: 1.5rem;
+      scroll-margin-top: 6em;
   }
   footer p {
       font-size: 0.8rem;
@@ -164,6 +294,10 @@ main #future {
   }
 
   /* Form */
+  footer form {
+      width: 60%;
+      margin: 0 auto;
+  }
 
   footer form .formgroup {
       margin: 2rem 0;
@@ -184,20 +318,26 @@ main #future {
       font-size: 1rem;
   }
 
+    footer form .form-group textarea{
+        min-height: 100px;
+    }
   footer form button {
       background-color: coral;
       border-radius: 5px;
       border: none;
-      padding: 1rem 2rem;
+      padding: 1rem 3rem;
       color: white;
       font-size: inherit;
   }
 
   @media (max-width: 899px) {
-      main #present{
+      main #experience{
           display: block;
       }
-      main #present img {
+      main #skills progress {
+          width: 100%;
+      }
+      main #experience img {
           width: 100%;
       }
       footer form {
@@ -230,23 +370,29 @@ main #future {
           font-size: 3rem;
           margin: 1rem;
       }
-      main #past .past_boxes {
+      main #work .work_boxes {
           flex-direction: column;
       }
-      main #past .box {
+      main #work .box {
           width: 100%;
           margin: 1rem 0;
       }
-      main #future img {
+      main #skills img {
           width: 100%;
           float: none;
           margin-right: 0;
       }
-      main #past,
-      main #future {
+      main #work,
+      main #skills {
           padding: 0;
       }
-      .container, main #present .content {
+      .container, main #experience .content {
           padding: 1rem;
+      }
+      main #gallery {
+          margin-top: 100px;
+      }
+      main #skills {
+          scroll-margin-top: 6em;
       }
   }

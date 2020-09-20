@@ -11,6 +11,7 @@
     <link
     href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
     rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/43c813bf44.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -19,9 +20,14 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#past">Past</a></li>
-          <li><a href="#present">Present</a></li>
-          <li><a href="#future">Future</a></li>
+          <li><a href="#">Portfolio <i class="fas fa-angle-down"></i> </a>
+            <ul>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
           <li><a href="#footer">Contact me</a></li>
         </ul>
       </nav>
@@ -30,10 +36,10 @@
       <section id="hero-banner">
         <h1>Welcome to my <span>Portfolio</span> page</h1>
       </section>
-          <section id="past">
+          <section id="work">
               <div class="container">
-                  <h2>Past</h2>
-              <div class="past_boxes">
+                  <h2>Work</h2>
+              <div class="work_boxes">
                 <div class="box">
                   <img src="https://source.unsplash.com/collection/190727/1600x900" alt="fdjv"/>
                   <h3>Lorem ipsum dolor sit amet.</h3>
@@ -56,18 +62,33 @@
               </div>        
             </div>
           </section>
-      <section id="present">
+      <section id="experience">
         <img src="https://source.unsplash.com/1600x900/?time" alt="time" />
         <div class="content">        
-        <h2>Present</h2>
+        <h2>Experience</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores nostrum eveniet quidem repudiandae? Ipsam consequuntur id molestias, velit inventore, placeat magnam tempora odit nihil quo cum numquam deserunt sint dolorum eius? Dolores, quaerat natus! Quo delectus quis neque culpa praesentium aspernatur alias earum nam dolores beatae, sapiente quas, consequatur tempora ducimus, consectetur possimus ad perspiciatis quae unde! Ipsam eos corporis rem repellat similique. Eaque tempore porro sunt numquam iure autem corrupti voluptatem minus unde soluta, ducimus voluptates quia repellendus doloremque ex quidem incidunt id repellat beatae. Eaque eum maxime harum aliquid expedita illo sed? Animi vero ducimus enim porro.</p>     
         </div>
       </section>
-      <section id="future">
+      <section id="skills">
         <div class="container">
-        <h2>future</h2>
-        <img src="https://source.unsplash.com/collection/190727/1600x900" alt="fdjv"/>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, illum ex repudiandae aliquam optio eveniet quia voluptatum unde aliquid officiis? Totam cum omnis voluptatem architecto quos veritatis maxime fugiat, qui ipsa dicta in repellendus, suscipit aperiam itaque animi provident, doloribus repudiandae facilis! Natus dolorum quam voluptas, neque atque molestiae animi, nostrum rem, a dolorem sunt! Vero optio error totam! Amet reprehenderit, autem odio iure tempora fuga repellat? Nam consectetur dolor aliquam doloribus. Tempora, iusto saepe cumque quia reprehenderit omnis eius impedit voluptatibus? Cum, doloremque quo. Corporis at, natus voluptatem, aliquam odio asperiores impedit dignissimos eius ipsum obcaecati aperiam vitae atque.</p>
+          <h2>Skills</h2>
+          <div class="boxes1">
+            <div class="box1">
+              <i class="fab fa-html5"></i>
+                <p>HTML</p>
+              <progress max="100" value="30"></progress>
+              </div>
+            <div class="box1">
+              <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+              <progress max="100" value="30"></progress>
+            </div>
+            <div class="box1">
+              <i class="fab fa-java"></i>
+              <p>Java</p>
+              <progress max="100" value="10"></progress>
+            </div>
+          </div>
         </div>
       </section>
     </main>
