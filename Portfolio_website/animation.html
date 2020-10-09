@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="description" content="My Portfolio page" />
+    <meta name="author" content="Sten Scheifel" />
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
+    rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/43c813bf44.js" crossorigin="anonymous"></script>
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#"><img src="Vector.png" alt="S"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Portfolio  <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="animation.html">Animation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="animation">
+            <div class="container1">
+                <div class="animated-circle"></div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <h2>Contact me</h2>
+        <div class="container">
+            <form>
+            <div class="formgroup">
+                <label for="name">Your name</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="formgroup">
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div class="formgroup">
+                <label for="message">Message to me</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit">Send message</button>
+            </form>
+            <p>Copyright &copy; My Website 2020</p>
+        </div>    
+      </footer>
+</body>
+</html>

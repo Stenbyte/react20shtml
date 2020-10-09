@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Portfolio page" />
+    <meta name="author" content="Sten Scheifel" />
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
+    rel="stylesheet"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/43c813bf44.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="#"><img src="Vector.png" alt="S"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Portfolio <i class="fas fa-angle-down"></i> </a>
+            <ul>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="animation.html">Animation</a></li>
+            </ul>
+          </li>
+          <li><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-banner">
+        <h1>Welcome to my <span>Portfolio</span> page</h1>
+      </section>
+          <section id="work">
+              <div class="container">
+                  <h2>Work</h2>
+              <div class="work_boxes">
+                <div class="box">
+                  <img src="https://source.unsplash.com/collection/190727/1600x900" alt="fdjv"/>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>111Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio vero nihil obcaecati quidem ex nulla maxime numquam vel, amet consequuntur.</p>
+                  <a href="#">Read more</a>
+                </div>
+                <div class="box">
+                  <img src="https://source.unsplash.com/collection/190727/1600x900" alt="fdjv"/>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>222Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo odio, tempore sit dolor libero veritatis animi delectus eaque officia!</p>
+                   <a href="#">Read more</a>
+                </div>
+                <div class="box">
+                  <img src="https://source.unsplash.com/collection/190727/1600x900" alt="fdjv"/>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel atque magnam debitis iste, voluptas quibusdam exercitationem et beatae iusto error!
+                  </p>            
+                  <a href="#">Read more</a>          
+                </div>
+              </div>        
+            </div>
+          </section>
+      <section id="experience">
+        <img src="https://source.unsplash.com/1600x900/?time" alt="time" />
+        <div class="content">        
+        <h2>Experience</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores nostrum eveniet quidem repudiandae? Ipsam consequuntur id molestias, velit inventore, placeat magnam tempora odit nihil quo cum numquam deserunt sint dolorum eius? Dolores, quaerat natus! Quo delectus quis neque culpa praesentium aspernatur alias earum nam dolores beatae, sapiente quas, consequatur tempora ducimus, consectetur possimus ad perspiciatis quae unde! Ipsam eos corporis rem repellat similique. Eaque tempore porro sunt numquam iure autem corrupti voluptatem minus unde soluta, ducimus voluptates quia repellendus doloremque ex quidem incidunt id repellat beatae. Eaque eum maxime harum aliquid expedita illo sed? Animi vero ducimus enim porro.</p>     
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="boxes1">
+            <div class="box1">
+              <i class="fab fa-html5"></i>
+                <p>HTML</p>
+              <progress max="100" value="30"></progress>
+              </div>
+            <div class="box1">
+              <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+              <progress max="100" value="30"></progress>
+            </div>
+            <div class="box1">
+              <i class="fab fa-java"></i>
+              <p>Java</p>
+              <progress max="100" value="10"></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <h2>Contact me</h2>
+      <div class="container">        
+        <form>
+            <div class="formgroup">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="formgroup">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div> 
+            <div class="formgroup">
+              <label for="Message">Message to me</label>
+              <textarea name="Message" id="Message"></textarea>
+            </div>
+              <button type="submit">Send message</button>
+        </form>
+        <p>Copyright &copy; My website 2020</p>
+      </div>
+      <div id="back-to-top" onclick="backToTop()">
+        <i class="material-icons">expand_less</i>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
